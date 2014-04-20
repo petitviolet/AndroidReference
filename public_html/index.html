@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Life is Tech! Android リファレンス</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+    <div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LiT Android</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Top</a></li>
+            <li><a href="#eclipse">エクリプス</a></li>
+            <li><a href="#shortcut">ショートカットキー</a></li>
+            <li><a href="#error">よくあるエラー</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Life is Tech! Android リファレンス</h1>
+      </div>
+      <div id="eclipse" class="page-header">
+        <h2>Eclipseについて</h2>
+      </div>
+
+
+
+      <div class="top">
+        <div class="name"><i class="fa fa-folder"></i>Eclipse</div>
+        <div class="yomi">エクリプス</div>
+        <div class="content">IDE</div>
+      </div>
+      <div class="top">
+        <div class="name">AndroidManifest.xml</div>
+        <div class="yomi">アンドロイドマニフェスト・ドット・エックスエムエル</div>
+        <div class="content">アプリの設定、必要な権限や、使用する画面などを記述するファイル</div>
+      </div>
+      <div class="top">
+        <div class="name">srcフォルダ</div>
+        <div class="yomi">Source(ソース)フォルダ</div>
+        <div class="content">.javaファイルが入っているフォルダ。(例：MainActivity.java)</div>
+      </div>
+      <div class="top res">
+        <div class="name">resフォルダ</div>
+        <div class="yomi">Resource(リソース)フォルダ</div>
+        <div class="content">画像(drawable)やレイアウト(layout)が入っているフォルダ</div>
+      </div>
+      <div class="res">
+        <div class="name">res/layoutフォルダ</div>
+        <div class="yomi">Layout(レイアウト)フォルダ</div>
+        <div class="content">レイアウトファイルが入っているフォルダ(例：activity_main.xml)</div>
+      </div>
+      <div class="res">
+        <div class="name">res/drawable-*dpiフォルダ</div>
+        <div class="yomi">Drawable(ドローワブル)フォルダ</div>
+        <div class="content">アイコンなどの画像が入っているフォルダ(例：ic_launcher.png)</div>
+      </div>
+      <div class="res">
+        <div class="name">res/menuフォルダ</div>
+        <div class="yomi">Menu(メニュー)フォルダ</div>
+        <div class="content">メニュー用レイアウトファイルが入っているフォルダ。(例：activity_main.xml)</div>
+      </div>
+      <div class="res">
+        <div class="name">res/values*フォルダ</div>
+        <div class="yomi">Values(レイアウト)フォルダ</div>
+        <div class="content">アプリ内で使用する文章や数値を保存するファイルが入っているフォルダ。(例：strings.xml)</div>
+      </div>
+      <div class="top">
+        <div class="name">gen</div>
+        <div class="yomi">Gen(Generated)フォルダ</div>
+        <div class="content">自動で生成されるフォルダ（触る必要はない）</div>
+      </div>
+      <div class="top">
+        <div class="name">bin</div>
+        <div class="yomi">Bin(Binary)フォルダ</div>
+        <div class="content">自動で生成されるフォルダ（触る必要はない）</div>
+      </div>
+      <div class="top">
+        <div class="name">libs</div>
+        <div class="yomi">Libs(Libraries)フォルダ</div>
+        <div class="content">アプリで使用するライブラリを入れるフォルダ</div>
+      </div>
+      <div class="top">
+        <div class="name">assets</div>
+        <div class="yomi">Assets(アセッツ)フォルダ</div>
+        <div class="content">resフォルダと似ているが、使い方などが違う（あまり触らない）</div>
+      </div>
+      <div class="top">
+        <div class="name">proguard-project.txt</div>
+        <div class="yomi">プロガードプロジェクト・ドット・テキスト</div>
+        <div class="content">セキュリティ対策用のファイル（触る必要はない）</div>
+      </div>
+      <div class="top">
+        <div class="name">project.properties</div>
+        <div class="yomi">プロジェクトプロパティーズ</div>
+        <div class="content">アプリのターゲットSDKなどを記述するファイル（あまり触らない）</div>
+      </div>
+
+      <div id="shortcut" class="page-header">
+        <h2>ショートカットキー</h2>
+      </div>
+      <h3 class="text-center">ステージ1</h3>
+      <h4>保存</h4>
+      <p>
+        Mac: <code>command + S</code> / Windows: <code>Ctrl + S</code>
+      </p>
+      <p>
+        変更したらまず保存！　このコマンドを使う癖をつけよう！<br>
+        Eclipseでは編集するとファイル名の左横に「*」が出てくるので，これがあることに気づいたらすぐに「保存」すること！<br>
+        <img src="img/shrtcut_save.jpg" class="img-responsive" alt="Eclipseの編集済みマーク">
+      </p>
+      <hr>
+      <h4>選択</h4>
+      <p>
+        <code>shift + 方向キー</code>
+      </p>
+      <p>
+        マウスを使わなくてもドラッグと同じことができる！<br>
+        コードを書いてる時によく使います。<br>
+        <code>shift + クリック</code> で同時に複数のファイルを選択することもできる！
+      </p>
+      <hr>
+      <h4>コピー &amp; 貼り付け</h4>
+      <dl>
+        <dt>コピー</dt>
+        <dd>Mac: <code>command + C</code> / Windows: <code>Ctrl + C</code></dd>
+        <dt>貼り付け</dt>
+        <dd>Mac: <code>command + V</code> / Windows: <code>Ctrl + V</code></dd>
+      </dl>
+      <p>
+        右クリックからのコピー &amp; ペーストから抜けだそう！<br>
+        これを覚えるだけで作業がぐっとはやくなる！
+      </p>
+      <h5 class="text-info">Let's Try!</h5>
+      <div class="row">
+        <div class="col-sm-6">
+          <p><input id="try-copy" type="text" class="form-control" value="こっちの文章を shift+矢印 で 選択・コピー して"></p>
+        </div>
+        <div class="col-sm-6">
+          <p><input id="try-paste" type="text" class="form-control" placeholder="こっちに貼り付けしてみよう！"></p>
+        </div>
+      </div>
+      <div id="ok-select" class="alert alert-success hidden">
+        <span class="glyphicon glyphicon-ok"></span> 「選択」を習得！
+      </div>
+      <div id="ok-copy" class="alert alert-success hidden">
+        <span class="glyphicon glyphicon-ok"></span> 「コピー」を習得！
+      </div>
+      <div id="ok-paste" class="alert alert-success hidden">
+        <span class="glyphicon glyphicon-ok"></span> 「貼り付け」を習得！
+      </div>
+      <hr>
+      <h4>元に戻す</h4>
+      <p>
+        Mac: <code>command + Z</code> / Windows: <code>Ctrl + Z</code>
+      </p>
+      <p>
+        作業を間違えたらまずこのコマンド！<br>
+        何回も押せばどんどんもどっていくので，うまくいった状態まで戻そう！<br>
+        ただし，ファイルを閉じると戻れないので注意！
+      </p>
+      <h5 class="text-info">Let's Try!</h5>
+      <p><input id="try-redo" type="text" class="form-control" value="この文章を削除して，「元に戻す」コマンドをやってみよう！"></p>
+      <div id="ok-redo" class="alert alert-success hidden">
+        <span class="glyphicon glyphicon-ok"></span> 「元に戻す」を習得！
+      </div>
+      <hr>
+      <h3 class="text-center">ステージ2</h3>
+      <h4>やり直す</h4>
+      <p>
+        Mac: <code>command + Shift + Z</code> / Windows: <code>Ctrl + Y</code>
+      </p>
+      <p>
+        「元に戻す」の逆バージョン。<br>
+        戻しすぎたってときはコレ！<br>
+        ただし，このコマンドはEclipse以外のアプリケーションでは違う可能性があるので注意！
+      </p>
+      <hr>
+      <h4>検索</h4>
+      <p>
+        Mac: <code>command + F</code> / Windows: <code>Ctrl + F</code>
+      </p>
+      <p>
+        100行もあるコードからひとつの単語を見つけ出すのは大変！<br>
+        「検索」を使えば一発で見つけられる！
+      </p>
+      <hr>
+      <h4>全て選択</h4>
+      <p>
+        Mac: <code>command + A</code> / Windows: <code>Ctrl + A</code>
+      </p>
+      <p>
+        全部選択するときはドラッグや shift + 矢印 では面倒くさい。<br>
+        「全て選択」を使えば一瞬！
+      </p>
+      <h5 class="text-info">Let's Try!</h5>
+      <p><input id="try-select-all" type="text" class="form-control" value="この文章を「全て選択」して削除してみよう！"></p>
+      <div id="ok-select-all" class="alert alert-success hidden">
+        <span class="glyphicon glyphicon-ok"></span> 「全て選択」を習得！
+      </div>
+      <hr>
+      <h3 class="text-center">ステージ3</h3>
+      <h4>補完</h4>
+      <p>
+        Mac: <code>control + space</code><span class="text-warning">*</span> / Windows: <code>Ctrl + Space</code>
+      </p>
+      <hr>
+      <h4>import</h4>
+      <p>
+        Mac: <code>command + shift + O</code> / Windows: <code>Ctrl + Shift + O</code>
+      </p>
+      <hr>
+      <h4>フォーマット</h4>
+      <p>
+        Mac: <code>command + shift + F</code> / Windows: <code>Ctrl + Shift + F</code>
+      </p>
+      <hr>
+      <h3>ショートカット一覧</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>処理内容</th>
+            <th>Mac</th>
+            <th>Windows</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>保存</td>
+            <td>command + S</td>
+            <td>Ctrl + S</td>
+          </tr>
+          <tr>
+            <td>選択</td>
+            <td>shift + 方向キー</td>
+            <td>Shift + 方向キー</td>
+          </tr>
+          <tr>
+            <td>コピー</td>
+            <td>command + C</td>
+            <td>Ctrl + C</td>
+          </tr>
+          <tr>
+            <td>貼り付け</td>
+            <td>command + V</td>
+            <td>Ctrl + V</td>
+          </tr>
+          <tr>
+            <td>切り取り</td>
+            <td>command + X</td>
+            <td>Ctrl + X</td>
+          </tr>
+          <tr>
+            <td>元に戻す</td>
+            <td>command + Z</td>
+            <td>Ctrl + Z</td>
+          </tr>
+          <tr>
+            <td>やり直す</td>
+            <td>command + shift + Z</td>
+            <td>Ctrl + Y</td>
+          </tr>
+          <tr>
+            <td>検索</td>
+            <td>command + F</td>
+            <td>Ctrl + F</td>
+          </tr>
+          <tr>
+            <td>全て選択</td>
+            <td>command + A</td>
+            <td>Ctrl + A</td>
+          </tr>
+          <tr>
+            <td>補完</td>
+            <td>control + space<span class="text-warning">*</span></td>
+            <td>Ctrl + Space</td>
+          </tr>
+          <tr>
+            <td>import</td>
+            <td>command + shift + O</td>
+            <td>Ctrl + Shift + O</td>
+          </tr>
+          <tr>
+            <td>フォーマット</td>
+            <td>command + shift + F</td>
+            <td>Ctrl + Shift + F</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <span class="text-warning">*</span>デフォルトではEclipseの補完機能よりもMacのSpotlight呼び出しの方が優先されてしまうので注意！
+      </p>
+      <div id="error" class="page-header">
+        <h2>よくあるエラー</h2>
+      </div>
+      <dl>
+        <dt>あああ</dt>
+        <dd>いいい</dd>
+        <dt>ううう</dt>
+        <dd>えええ</dd>
+      </dl>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

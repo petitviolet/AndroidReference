@@ -17,7 +17,7 @@ var rules = [
   "example":""
 },{
   "title":"{},[],(),\"\",\'\'の数を合わせよう！",
-  "description":"エクリプス",
+  "description":"カッコやクオテーションはきちんと閉じよう！",
   "example":"IDE"
 },{
   "title":"Eclipse",

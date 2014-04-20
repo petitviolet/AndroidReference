@@ -1,0 +1,41 @@
+eclipseについて
+
+src
+source
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>処理内容</th>
+					<th>Mac</th>
+					<th>Windows</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>保存</td>
+					<td>command + S</td>
+					<td>Ctrl + S</td>
+				</tr>
+				<tr>
+					<td>コピー</td>
+					<td>command + C</td>
+					<td>Ctrl + C</td>
+				</tr>
+				<tr>
+					<td>貼り付け</td>
+					<td>command + V</td>
+					<td>Ctrl + V</td>
+				</tr>
+				<tr>
+					<td>切り取り</td>
+					<td>command + X</td>
+					<td>Ctrl + X</td>
+				</tr>
+				<tr>
+					<td>元に戻す</td>
+					<td>command + Z</td>
+					<td>Ctrl + Z</td>
+				</tr>
+			</tbody>
+		</table>

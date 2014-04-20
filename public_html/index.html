@@ -73,8 +73,8 @@
             <div class="content">.javaファイルが入っているフォルダ。(例：MainActivity.java)</div>
           </div>
         </div>
-        <div class="dir res">
-          <div class="name"><a class="nojump" href="#"><i class="fa fa-folder"></i> </a><a class="nojump" href="#">resフォルダ</a></div>
+        <div class="dir">
+          <div class="name"><a class="res nojump" href="#"><i class="fa fa-folder"></i> </a><a class="nojump" href="#">resフォルダ</a></div>
           <div class="description">
             <div class="yomi">Resource(リソース)フォルダ</div>
             <div class="content">画像(drawable)やレイアウト(layout)が入っているフォルダ</div>
@@ -349,12 +349,23 @@
       <div id="error" class="page-header">
         <h2>よくあるエラー</h2>
       </div>
-      <dl>
-        <dt>あああ</dt>
-        <dd>いいい</dd>
-        <dt>ううう</dt>
-        <dd>えええ</dd>
-      </dl>
+
+<h4>日本語のファイル、数字から始まるファイルを入れない！</h4>
+<p>ファイルをプログラムにひも付けするR.javaというファイルがバグってしまう。</p>
+<p>例) 画像をdrawableフォルダに入れるときに、「ミズゴロウ.png」という名前で入れてしまった！</p>
+<hr>
+<h4>TextViewやButtonの上にエラーが出る。</h4>
+<p>TextViewやButtonを使うのに必要なもの(パッケージ)が入ってない(インポートされていない)ので、<code>Ctrl+Shift+o</code>でインポートしよう。</p>
+<p>例) </p>
+<hr>
+<h4>処理の後には;(セミコロン)をつけよう！</h4>
+<p>;(セミコロン)は日本語でいうところの「。」に当たるもの。</p>
+<p>例) </p>
+<hr>
+<h4>{},[],(),"",''の数を合わせよう！</h4>
+<p>エクリプス</p>
+<p>例) IDE</p>
+<hr>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.0.min.js"></script>
